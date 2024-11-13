@@ -12,4 +12,11 @@ const priceTicket = price * lengthKilometers
 const priceYoung = priceTicket * (1 - discountKid);
 const priceSenior = priceTicket * (1 - discountSenior);
 
-
+//OUTPUT
+if (agePassenger < 18) {
+  console.log( `Applicando lo sconto Young, il prezzo della tratta è di € ${priceYoung.toFixed(2)}.`)
+} else if (agePassenger > 65) {
+  console.log( `Applicando lo sconto Senior, il prezzo della tratta è di € ${priceSenior.toFixed(2)}.`)  
+} else {
+  console.log(`Il prezzo della tratta è di € ${priceTicket.toFixed(2)}.`)
+}
