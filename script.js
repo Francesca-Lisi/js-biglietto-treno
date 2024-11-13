@@ -7,4 +7,9 @@ const discountSenior = 0.4;
 const lengthKilometers = parseInt(prompt ('Inserisci i kilometri che vuoi percorrere'));
 const agePassenger = parseInt(prompt ('Inserisci la tua età'));
 
+//DATI RICAVATI
+const priceTicket = price * lengthKilometers 
+const priceYoung = priceTicket * (1 - discountKid);
+const priceSenior = priceTicket * (1 - discountSenior);
+
 
